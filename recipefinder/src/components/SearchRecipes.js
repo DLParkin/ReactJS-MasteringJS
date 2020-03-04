@@ -6,6 +6,8 @@ import {
   Button,
   FormLabel
 } from "react-bootstrap";
+import { connect } from "react-redux";
+import { setRecipes } from "../_actions";
 
 class SearchRecipes extends Component {
   constructor() {
@@ -19,11 +21,12 @@ class SearchRecipes extends Component {
   search() {
     let { ingredients, dish } = this.state;
     const url = `http://www.recipepuppy.com/api/?i=${ingredients}&q=${dish}`;
-    console.log(url)
+    console.log(url);
     fetch(url, {
-      method: 'GET'
-    }).then(response => response.json())
-      .then(json => console.log("recipes", json));
+      method: "GET"
+    })
+      .then(response => response.json())
+      .then(json => this.props.setRecipes(json));
   }
 
   render() {
@@ -51,4 +54,4 @@ class SearchRecipes extends Component {
   }
 }
 
-export default SearchRecipes;
+export default connect(null, { setRecipes })(SearchRecipes);
