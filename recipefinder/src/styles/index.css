@@ -1,8 +1,17 @@
 body {
-    text-align: center;
-    padding: 5%;
+  text-align: center;
+  padding: 5%;
 }
 
 .form-inline {
-    display: inline-flex;
+  display: inline-flex;
+  padding-bottom: 20px;
+}
+
+.recipe-card {
+  padding: 10px;
+  margin: 20px;
+  -webkit-box-shadow: -4px 9px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -4px 9px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -4px 9px 10px 0px rgba(0, 0, 0, 0.75);
 }
