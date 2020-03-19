@@ -22,4 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-./src/actions/secrets.js
+./src/actions/secret.js
+
+../src/actions/secret.js
