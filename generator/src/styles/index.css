@@ -62,7 +62,7 @@ body {
 
 @keyframes darken {
   from {filter: brightness(90%)};
-  to{filter: brightness(10%)};
+  to {filter: brightness(10%)};
 }
 
 @keyframes fade-in {
