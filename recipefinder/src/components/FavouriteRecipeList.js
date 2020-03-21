@@ -9,7 +9,7 @@ export class FavouriteRecipeList extends Component {
     return (
       <div>
         <h4 className="link">
-          <Link to='/'>Home</Link>
+          <Link to="/">Home</Link>
         </h4>
         <h4>Favourite Recipes</h4>
         {this.props.favouriteRecipes.map((recipe, idx) => {
